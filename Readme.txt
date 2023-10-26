@@ -30,4 +30,32 @@ RUNNING
 -> Tests => Select test.API and run tests collection 
 -> Swagger Use=> Use the online-autodocumentation and run examples.
 
+==> Data Examples
+To create an affiliate, use this in the body:
+{
+  "name": "Juan Perez",
+  "email": "pepe@pepe.com"
+}
+
+
+To create an AffiliateCode, using the id in the previous response:
+{
+
+  "affiliateId": "REPLACEWITHPREVIOUSGUID",
+  "affiliateCode": "AFFILIATE333333",
+  "expirationDate": "2024-10-25T18:58:52.201Z",
+  "availableAmount": 3
+}
+
+To create a customer:
+{
+  "Name": "Pedro",
+  "Email": "pedro@customer.com",
+  "affiliateId": "REPLACEWITHPREVIOUSGUID",
+  "affiliateCodeUsed": "REPLACEWITHPREVIOUSAFFILIATECODE"
+}
+
+
+To list all the customers for an affiliate:
+URL/api/Affiliates/AFFILIATE-GUID/Customers
 
