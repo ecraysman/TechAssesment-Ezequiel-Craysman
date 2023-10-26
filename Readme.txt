@@ -27,8 +27,13 @@ RUNNING
 
 
 -> Run from source => select API project as startup project and run on IIS-Express
--> Tests => Select test.API and run tests collection 
 -> Swagger Use=> Use the online-autodocumentation and run examples.
+
+Flow
+
+1. Create an Affiliate
+2. Create an AffiliateCode => Generate unique codes with duration and number of usable times
+3. Create a Customer, indicating the affiliate code and id. => Assumption: Customers need to be referred to subscribe by someone with a promotion code.
 
 ==> Data Examples
 To create an affiliate, use this in the body:
